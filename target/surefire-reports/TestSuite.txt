@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 6, Errors: 0, Skipped: 6, Time elapsed: 0.91 s <<< FAILURE! - in TestSuite
+CapstoneProject.CapstoneProject.Test1.setup1  Time elapsed: 0.549 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'Port' is required by BeforeClass on method setup1 but has not been marked @Optional or defined
+
+
+CapstoneProject.CapstoneProject.Test2.setup1  Time elapsed: 0.005 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'Port' is required by BeforeClass on method setup1 but has not been marked @Optional or defined
+
+
+CapstoneProject.CapstoneProject.Test3.setup1  Time elapsed: 0.002 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'Port' is required by BeforeClass on method setup1 but has not been marked @Optional or defined
+
+
+CapstoneProject.CapstoneProject.Test4.setup1  Time elapsed: 0.003 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'Port' is required by BeforeClass on method setup1 but has not been marked @Optional or defined
+
+
+CapstoneProject.CapstoneProject.Test5.setup1  Time elapsed: 0.005 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'Port' is required by BeforeClass on method setup1 but has not been marked @Optional or defined
+
+
+CapstoneProject.CapstoneProject.Test6.setup2  Time elapsed: 0.002 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'Port' is required by BeforeClass on method setup2 but has not been marked @Optional or defined
+
+

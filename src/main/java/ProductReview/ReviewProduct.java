@@ -1,0 +1,51 @@
+package ProductReview;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+
+public class ReviewProduct {
+	
+		WebDriver driver;
+
+		  public ReviewProduct(WebDriver driver)
+		{
+			this.driver=driver;
+			PageFactory.initElements(driver, this);
+		}
+		  
+		  @FindBy(xpath="//*[text()='Write Your Review']")
+		  public WebElement ReviewMsg;
+		  
+		  @FindBy(id="name")
+		  public WebElement NameReview;
+		  
+		  @FindBy(id="email")
+		  public WebElement EmailReview;
+		  
+		  @FindBy(id="review")
+		  public WebElement WriteReview;
+		  
+		  @FindBy(id="button-review")
+		  public WebElement SubmitReview;
+		  
+		  @FindBy(xpath = "//span[contains(text(),'Thank you for your review.')]")
+		  public WebElement Thankyou;
+		  
+		  
+		  
+		  public void EnterReview()
+		  {
+			  ReviewMsg.isDisplayed();
+			  NameReview.sendKeys("Swarup");
+			  EmailReview.sendKeys("swaruppatil@gmail.com");
+			  WriteReview.sendKeys("This product is good");
+			  SubmitReview.click();
+			  System.out.println(Thankyou.isDisplayed());
+				Assert.assertTrue(Thankyou.isDisplayed(),"Signup button is not Displayed");
+		  }
+
+}
+
+

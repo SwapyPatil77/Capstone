@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+	  <parameter name="Port" value="5555"/>
+	  <parameter name="Port" value="6666"/>
+    <classes>
+      <class name="CapstoneProject.CapstoneProject.Test6"/>
+      <class name="CapstoneProject.CapstoneProject.Test4"/>
+      <class name="CapstoneProject.CapstoneProject.Test5"/>
+      <class name="CapstoneProject.CapstoneProject.Test2"/>
+      <class name="CapstoneProject.CapstoneProject.Test3"/>
+      <class name="CapstoneProject.CapstoneProject.Test1"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

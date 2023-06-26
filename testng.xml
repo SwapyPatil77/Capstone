@@ -13,4 +13,17 @@
       <class name="CapstoneProject.CapstoneProject.Test1"/>
     </classes>
   </test> <!-- Test -->
+	
+ <test name="Edge Test">
+		
+<parameter name="Port" value="6666"/>
+      <classes>
+      <class name="CapstoneProject.CapstoneProject.Test6"/>
+      <class name="CapstoneProject.CapstoneProject.Test4"/>
+      <class name="CapstoneProject.CapstoneProject.Test5"/>
+      <class name="CapstoneProject.CapstoneProject.Test2"/>
+      <class name="CapstoneProject.CapstoneProject.Test3"/>
+      <class name="CapstoneProject.CapstoneProject.Test1"/>
+    </classes>
+  </test>
 </suite> <!-- Suite -->
